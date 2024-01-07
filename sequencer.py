@@ -35,7 +35,7 @@ class Sequence:
         done = False
         while done == False:         
             print(self.samples)
-            sample_id = input("Input number corresponding to sample pattern to be edited: ")
+            sample_id = input("Input number corresponding to sample pattern to be edited(0,1,2...): ")
             sample_id = int(sample_id)
             sample_pattern = self.patterns[sample_id]
             while done == False:
@@ -93,11 +93,18 @@ def play_sequence():
 
 
 ###### main loop
+print("-------------------------")
+print(r"""
+   ____                                   __    _ 
+  / __/__ ___ ___ _____ ___  _______ ___ / /__ (_)
+ _\ \/ -_) _ `/ // / -_) _ \/ __/ -_|_-</  '_// / 
+/___/\__/\_, /\_,_/\__/_//_/\__/\__/___/_/\_\/_/  
+          /_/                                     
+""")
 
+s.bpm = int(input("BPM?: "))
 while True:
     print("-------------------------")
-    print("Epic 16 beat Sequencer")
-    
     choice = input('''
     [1] -> load samples, [2] -> edit pattern, [3] -> play sequence
                    ''')  
