@@ -7,7 +7,6 @@ and play back the combined patterns.
 - Requires sounddevice, soundfile, and numpy
 
  :: Current Issues/Future Steps :: 
-- Only filenames with no spaces and escape characters are supported.
 - Ability to save sequences and render them to wav files.
 - Realtime audio visualizer
 
